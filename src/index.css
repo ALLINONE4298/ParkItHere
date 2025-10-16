@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,7 +24,59 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  text-align: center;
+  min-height: 100vh;
+  max-width: 100%;
 }
+
+
+
+/* Light mode variables */
+:root {
+    --contact-bg: #fff;
+    --contact-title: #2d3748;
+    --contact-desc: #4a5568;
+    --contact-label: #2d3748;
+    --contact-input-bg: #f7fafc;
+    --contact-input-border: #cbd5e1;
+    --contact-input-focus: #3182ce;
+    --contact-btn-bg: #3182ce;
+    --contact-btn-bg-hover: #2563eb;
+    --contact-btn-color: #fff;
+    --contact-success-bg: #e6fffa;
+    --contact-success-color: #2c7a7b;
+    --contact-success-border: #b2f5ea;
+    --contact-error-bg: #fff5f5;
+    --contact-error-color: #c53030;
+    --contact-error-border: #fed7d7;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --contact-bg: #1a202c;
+        --contact-title: #e2e8f0;
+        --contact-desc: #a0aec0;
+        --contact-label: #e2e8f0;
+        --contact-input-bg: #2d3748;
+        --contact-input-border: #4a5568;
+        --contact-input-focus: #63b3ed;
+        --contact-btn-bg: #3182ce;
+        --contact-btn-bg-hover: #63b3ed;
+        --contact-btn-color: #fff;
+        --contact-success-bg: #234e52;
+        --contact-success-color: #81e6d9;
+        --contact-success-border: #38b2ac;
+        --contact-error-bg: #742a2a;
+        --contact-error-color: #feb2b2;
+        --contact-error-border: #c53030;
+    }
+}
+
 
 a {
   font-weight: 500;
@@ -22,13 +87,7 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+
 
 h1 {
   font-size: 3.2em;
