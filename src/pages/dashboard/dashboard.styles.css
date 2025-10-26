@@ -1,0 +1,11 @@
+.dashboard-container{
+    min-height: calc(100vh - 150px); /* Adjusting for header and footer height */
+    display: flex;
+
+}
+
+.main-content{
+    flex: 1;
+    padding: 20px;
+    background-color: #ddd;
+}
