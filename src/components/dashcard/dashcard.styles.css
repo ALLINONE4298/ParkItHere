@@ -1,0 +1,22 @@
+.dashcard-container{
+    background-color: var(--contact-input-bg, #2d3748);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.dashcard-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-primary, #ffffff);
+}
+
+.dashcard-value{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--contact-btn-bg-hover, #4299e1);
+}
